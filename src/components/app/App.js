@@ -13,3 +13,21 @@ function App() {
 }
 
 export default App;
+
+// function getExchangeRate() {
+//   // Where we're fetching data from
+//   fetch(`http://resources.finance.ua/ua/public/currency-cash.json`,
+//     {
+//       mode: 'cors',
+//       headers: {
+//         'Access-Control-Allow-Origin': '*'
+//       }
+//     })
+//     // We get the API response and receive data in JSON format...
+//     .then(response => response.json())
+//     // ...then we update the users state
+//     .then(data =>
+//       console.log(data)
+//     )
+// }
+// getExchangeRate();
