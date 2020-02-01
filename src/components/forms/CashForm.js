@@ -22,7 +22,7 @@ const CashForm = props => {
         </div>
         <div>
           <button type="submit" disabled={pristine || submitting}>
-            Submit
+            Add
           </button>
         </div>
       </form>
