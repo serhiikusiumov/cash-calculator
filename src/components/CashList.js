@@ -10,13 +10,13 @@ const CashList = ({ cash, total, timestamp, addCash }) => (
     <ul>
       {cash.map(pack =>
         <li key={'pack' + pack.value}>
-          <h4>Bill {pack.value}</h4>
-          <h5>Sum: {new Intl.NumberFormat().format(pack.sum)}</h5>
-          <h6>Count: {pack.count}</h6>
+          <h2>${pack.value}</h2>
+          {/* <h2>Sum: {new Intl.NumberFormat().format(pack.sum)}</h2> */}
+          <h3>{pack.count}</h3>
           <div>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(i =>
+            {[10, 9, 8, 7, 6, 5, 4, 3, 2, 1].map(i =>
               <button
-                className={i === 10 ? 'button_red' : ''}
+                // className={i === 10 ? 'button_red' : ''}
                 type="button"
                 onClick={() => {
                   addCash(pack)({ count: i })
