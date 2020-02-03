@@ -6,7 +6,7 @@ import "./CashList.css"
 const CashList = ({ cash, total, timestamp, addCash }) => (
   <div className='CashList'>
     <h1>Total: {new Intl.NumberFormat().format(total)} </h1>
-    <h2>Date: {new Intl.DateTimeFormat().format(timestamp)}</h2>
+    {/* <h2>Date: {new Intl.DateTimeFormat().format(timestamp)}</h2> */}
     <ul>
       {cash.map(pack =>
         <li key={'pack' + pack.value}>
