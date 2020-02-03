@@ -114,7 +114,6 @@ h4 {
 
 }
 .CashList ul li :focus {
-    display: inline-block;
     background-color: #f14c52;
     color: #fff;
     -webkit-box-shadow: 0 4px 4px 0 rgba(241, 76, 82, .2); 
@@ -153,7 +152,6 @@ h4 {
 }
 
 .CashList button.button_red {
-    display: inline-block;
     background-color: #f14c52;
     color: #fff;
     -webkit-box-shadow: 0 4px 4px 0 rgba(241, 76, 82, .2); 
@@ -177,7 +175,6 @@ h4 {
 }
 
 .CopyFormula :focus {
-    display: inline-block;
     background-color: #f14c52;
     color: #fff;
     -webkit-box-shadow: 0 4px 4px 0 rgba(241, 76, 82, .2); 
