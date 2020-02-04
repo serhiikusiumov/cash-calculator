@@ -30,17 +30,17 @@ const CashList = ({ cash, total, timestamp, addCash }) => (
       )}
     </ul>
     <div className="CopyFormula">
-    <p>=SUM({total})+N("Total: {new Intl.NumberFormat().format(total)} counted on: {new Intl.DateTimeFormat().format(timestamp)} |
+    <p>=SUM({total})+N("Total: {new Intl.NumberFormat().format(total)} counted on: {new Intl.DateTimeFormat().format(timestamp)} | 
         {cash.map(pack =>
-      <span> {pack.value}: {pack.count}; </span>)}")
+      <span> {pack.value}:{pack.count} | </span>)}")
     </p>
       <button type="button"
         onClick={() => {
           navigator.clipboard.writeText(
             function () {
-              let text = `=SUM(${total})+N("Total: ${new Intl.NumberFormat().format(total)} counted on: ${new Intl.DateTimeFormat().format(timestamp)} |`;
+              let text = `=SUM(${total})+N("Total: ${new Intl.NumberFormat().format(total)} counted on: ${new Intl.DateTimeFormat().format(timestamp)} | `;
               cash.map(pack => {
-                text += `${pack.value}: ${pack.count};`
+                text += `${pack.value}:${pack.count} | `
               });
               text += '")';
               return text;
