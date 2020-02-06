@@ -36,6 +36,7 @@ const CashList = ({ cash, total, timestamp, addCash }) => (
     </p>
       <button type="button"
         onClick={() => {
+          // https://stackoverflow.com/questions/34045777/copy-to-clipboard-using-javascript-in-ios/34046084
           navigator.clipboard.writeText(
             function () {
               let text = `=SUM(${total})+N("Total: ${new Intl.NumberFormat().format(total)} counted on: ${new Intl.DateTimeFormat().format(timestamp)} | `;
